@@ -4,7 +4,7 @@ Antes de executar os códigos dos scripts elaborados, é importante tomar alguma
 
 * Garanta que o Node.js foi instalado corretamente e está em sua versão mais atualizada;
 
-* Os códigos desenvolvidos aqui utilizam o módulo Prompt-Sync para entrada de dados por usuários. É importante garantir a sua instalação antes de executar os códigos.
+* Os códigos desenvolvidos aqui utilizam o módulo Prompt-Sync para entrada de dados por usuários. É importante garantir a sua instalação antes de executar os códigos;
 
 ```sh
 npm install prompt-sync
