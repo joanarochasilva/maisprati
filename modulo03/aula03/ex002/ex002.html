@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classes e IDs</title>
+  <style type="text/css">
+    #principal {
+      background-color: rgb(136, 201, 218);
+    }
+
+    .corParagrafo {
+      color: red;
+    }
+
+    #destaque {
+      color: white;
+    }
+
+    #topo {
+      border: 3px solid black;
+    }
+
+    #rodape {
+      background-color: white;
+    }
+
+    .produtos {
+      font-size: 50px;
+      border: 3px solid yellow;
+      margin: 10px;
+    }
+
+    .conteudo {
+      border: 6px solid black;
+      margin: 10px;
+    }
+
+    a:link {
+      text-decoration: none;
+      color: black;
+    }
+
+    a:visited {
+      /*links que já foram acessados*/
+      color: rgb(28, 192, 118);
+      cursor: crosshair;
+    }
+
+    a:hover {
+      /*Ao passar o mouse por cima.*/
+      color: orange;
+      cursor: crosshair;
+    }
+
+    a:active {
+      /*Quando é clicado*/
+      color: pink;
+      text-transform: uppercase;
+      cursor: crosshair;
+    }
+  </style>
+</head>
+<body id="principal">
+  <!--
+    <h1>Estilo CSS (Cascading Style Sheets)</h1>
+    <p class="corParagrafo">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates non repudiandae assumenda ea cupiditate neque, <span id="destaque">RIO GRANDE DO SUL</span> esse nostrum velit maxime numquam optio. Ea totam ullam odio dolorem, quae earum quia?
+    </p>
+    <p class="corParagrafo">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corporis delectus dignissimos illum officiis maiores aperiam quia explicabo ducimus rerum, aspernatur vel natus architecto, ea error, deserunt mollitia numquam aut!
+    </p>
+  -->
+  <div id="topo">
+    <img src="" alt="">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">PRODUTOS</a></li>
+      <li><a href="#">CONTATO</a></li>
+    </ul>
+  </div>
+  <div class="conteudo">
+    <div class="produtos">
+      Produto 1
+    </div>
+    <div class="produtos">
+      Produto 2
+    </div>
+    <div class="produtos">
+      Produto 3
+    </div>
+  </div>
+  <div id="rodape">
+    Todos os Direitos Reservados &copy; Professor Jaques
+  </div>
+</body>
+</html>
