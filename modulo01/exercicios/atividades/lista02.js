@@ -7,7 +7,7 @@ const input = require('prompt-sync')();
 Pergunte a quantidade de cigarros fumados por dias e quantos anos ele já fumou.
 Considere que um fumante perde 10 min de vida a cada cigarro. Calcule quantos dias de
 vida um fumante perderá e exiba o total em dias.*/
-
+/*
 const numCigarsPerDay = parseInt(input('Digite o número de cigarros por dia: '));
 const numSmokingYears = parseInt(input('Digite o número de anos: '));
 
@@ -15,14 +15,25 @@ const timeLostPerCigar = 0.00694; // 10 min ~= 0.00694 day
 const lifeTimelost = (numCigarsPerDay * timeLostPerCigar) * (numSmokingYears * 360);
 
 console.log(`O número de dias perdidos fumando ${numCigarsPerDay} por dia é igual a ${Math.round(lifeTimelost)}`)
-
+*/
 /*2. Escreva um programa que pergunte a velocidade de um carro. Caso ultrapasse 80 Km
 h-1, exiba uma mensagem dizendo que o usuário foi multado. Nesse caso, exiba o valor da
 multa, cobrando R$ 5,00 por cada Km acima da velocidade permitida.*/
+/*
+const velocidadeCarro = input("Digite a velocidade do carro: ");
 
+const statusVelocidade = velocidadeCarro > 80 ? `Você foi multado! O valor da multa é igual a ${(velocidadeCarro - 80) * 5}` : "";
+
+console.log(`${statusVelocidade === "" ? "Você está andando na velocidade correta!" : statusVelocidade}`);
+*/
 /*3. Faça um algoritmo que pergunte a distância que um passageiro deseja percorrer em
 Km. Calcule o preço da passagem, cobrando R$ 0.50 por Km para viagens até 200 Km e
 R$ 0.45 para viagens mais longas.*/
+
+const distanciaDesejada = input("Digite a distância que planeja percorre: ");
+const precoPassagem = (distanciaDesejada <= 200 ? distanciaDesejada * 0.50 : distanciaDesejada * 0.45).toLocaleString('pt-br', {style: "currency", currency: "BRL"});
+
+console.log(precoPassagem);
 
 /*4. Crie um programa que leia o tamanho de três segmentos de reta. Analise seus
 comprimentos e diga se é possível formar um triângulo com essas retas.
