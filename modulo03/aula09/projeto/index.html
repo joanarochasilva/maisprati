@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livros</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav id="menu">
+    <ul id="itens-menu">
+      <li><a href="#">Cadastro de Livros</a></li>
+      <li><a href="#">Listagem de Livros</a></li>
+    </>
+  </nav>
+  <main id="principal">
+    <div id="titulo">
+      <h1>Registro de Novo Livro</h1>
+    </div>
+    <div id="informacoes">
+      <input type="text" placeholder="Nome do Livro" class="informacao-texto"/>
+      <input type="text" placeholder="Autor do Livro" class="informacao-texto"/>
+      <select name="genero" id="genero">
+        <option value="nenhuma">Selecione um gênero</option>
+        <option value="biografia">Biografia</option>
+        <option value="autobiografia">Autobiografia</option>
+        <option value="">Autobiográfia</option>
+        <option value="romance">Romance</option>
+        <option value="romance">Poesia</option>
+      </select>
+      <input type="date" name="lancamento" id="lancamento">
+      <textarea name="descricao" id="descricao" cols="10" rows="1">Descrição</textarea>
+      <input type="button" value="Adicionar" id="botao-adicionar">
+    </div>
+  </main>
+</body>
+</html>
