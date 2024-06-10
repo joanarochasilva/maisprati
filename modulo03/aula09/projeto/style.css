@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #f3edf1;
+}
+
+nav#menu {
+  background-color: #451776;
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+}
+
+ul#itens-menu{
+  width: 1150px;
+  margin: auto;
+}
+
+ul#itens-menu li {
+
+  display: inline-block;
+  padding: 15px;
+}
+
+ul#itens-menu li>a {
+  color: #e7d8e9;
+}
+
+main#principal {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 1000px;
+  margin: 50px auto;
+  padding: 60px;
+}
+#titulo {
+   text-transform: uppercase;
+   color: #3c1a7d;
+}
+
+#informacoes {
+  margin: 50px auto;
+  width: 800px;
+}
+input, select, textarea {
+  color: #695e72;
+  display: inline-block;
+  border-radius: 3px;
+  width: 200px;
+  border: .5px solid #e6e1ef;
+  padding: 10px;
+  margin: 5px;
+  
+}
+select {
+  width: 175px;
+}
+textarea {
+  width: 755px;
+
+}
+
+input#lancamento {
+  width: 95px;
+}
+
+#botao-adicionar {
+  float: right;
+}
