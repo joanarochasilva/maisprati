@@ -14,34 +14,28 @@ const numSmokingYears = parseInt(input('Digite o número de anos: '));
 const timeLostPerCigar = 0.00694; // 10 min ~= 0.00694 day
 const lifeTimelost = (numCigarsPerDay * timeLostPerCigar) * (numSmokingYears * 360);
 
-<<<<<<< HEAD
 console.log(`O número de dias perdidos fumando ${numCigarsPerDay} por dia é igual a ${Math.round(lifeTimelost)}`)
-<<<<<<< HEAD
 
 /*2. Escreva um programa que pergunte a velocidade de um carro. Caso ultrapasse 80 Km
 h-1, exiba uma mensagem dizendo que o usuário foi multado. Nesse caso, exiba o valor da
 multa, cobrando R$ 5,00 por cada Km acima da velocidade permitida.*/
 
-=======
-=======
 console.log(`O número de dias perdidos fumando ${numCigarsPerDay} cigarros por dia é igual a ${Math.round(lifeTimelost)}`)
->>>>>>> 8712793 (criação da aula02 módulo 03)
-*/
+
+
 /*2. Escreva um programa que pergunte a velocidade de um carro. Caso ultrapasse 80 Km
 h-1, exiba uma mensagem dizendo que o usuário foi multado. Nesse caso, exiba o valor da
 multa, cobrando R$ 5,00 por cada Km acima da velocidade permitida.*/
 /*
-<<<<<<< HEAD
->>>>>>> 86d109146a0ede0c0642566aeccdbd1df0b3026c
+
 const velocidadeCarro = input("Digite a velocidade do carro: ");
-=======
+
 const carSpeed = parseFloat(input('Digite a velocidade do carro: '));
 
 const trafficTicket = carSpeed > 80 ? `Multado! Pague R$ ${(carSpeed - 80) * 5.00}.` : `Sem multas aplicáveis`;
 
 console.log(trafficTicket);
 */
->>>>>>> 8712793 (criação da aula02 módulo 03)
 
 const statusVelocidade = velocidadeCarro > 80 ? `Você foi multado! O valor da multa é igual a ${(velocidadeCarro - 80) * 5}` : "";
 
@@ -126,7 +120,6 @@ function playRaffle () {
     const raffle = Math.floor(Math.random() * (5 - 1) + 1);
     let guessRaffle = parseInt(input('Digite um número entre 1 e 5: '));
 
-<<<<<<< HEAD
 const numSorteado = Math.random() * (5 - 1) + 1;
 const chute = 0;
 
@@ -138,7 +131,6 @@ while (chute != numSorteado) {
 
 console.log(`Parabéns, você acertou! O número sorteado foi ${numSorteado}`);
 
-=======
     let testGuess = guessRaffle === raffle;
 
     while(!testGuess) {
@@ -153,7 +145,6 @@ console.log(`Parabéns, você acertou! O número sorteado foi ${numSorteado}`);
 
 playRaffle();
 */
->>>>>>> 86d109146a0ede0c0642566aeccdbd1df0b3026c
 /*7. Uma empresa de aluguel de carros precisa cobrar pelos seus serviços. O aluguel de um
 carro popular custa R$ 90,00 por dia e um carro de luxo custa R$ 150,00. Além disso, o
 cliente paga por Km percorrido. Faça um programa que leia o tipo de carro alugado
@@ -165,7 +156,6 @@ Carros populares
 Carros de luxo
 - Até 200 Km percorridos: R$ 0,30 por Km
 - Acima de 200 Km percorridos: R$ 0,25 por Km*/
-<<<<<<< HEAD
 
 const carroPopular = 90;
 const carroLuxo = 150;
@@ -176,7 +166,7 @@ const tipoCarroAlugado = input("Digite o tipo de carro alugado (Carro Popular : 
 
 /*
 8. Um programa de vida saudável quer dar pontos por atividades físicas realizadas que
-=======
+
 /*
 function carRent() {
     const carType = input('Digite o tipo de carro alugado (popular ou de luxo): ').toLowerCase();
@@ -203,7 +193,6 @@ console.log(`Valor a ser pago R$ ${carRent().toLocaleString('pt-br', {minimumFra
 */
 
 /*8. Um programa de vida saudável quer dar pontos por atividades físicas realizadas que
->>>>>>> 86d109146a0ede0c0642566aeccdbd1df0b3026c
 podem ser trocados por dinheiro. Cada hora de atividade física no mês vale pontos. O
 sistema funciona assim:
 - até 10 h de atividade no mês: ganha 2 pontos por hora
@@ -211,7 +200,6 @@ sistema funciona assim:
 - acima de 20 h de atividade no mês: ganha 10 pontos por hora
 - A cada ponto ganho, o cliente fatura R$ 0,05 (5 centavos)
 Faça um programa que leia quantas horas de atividade uma pessoa teve por mês.
-<<<<<<< HEAD
 Calcule e mostre quantos pontos ela teve e quanto dinheiro ela conseguiu ganhar.
 */
 /*
@@ -222,7 +210,6 @@ funcionário.
 */
 /*
 10. Crie um programa usando a estrutura “faça enquanto” que leia vários números. A
-=======
 Calcule e mostre quantos pontos ela teve e quanto dinheiro ela conseguiu ganhar.*/
 /*
 const exerciceHours = parseFloat(input('Digite quantas horas foram dedicadas a atividades físicas este mês: '));
@@ -254,7 +241,6 @@ cada laço, pergunte se o usuário quer continuar ou não. No final, mostre na t
 a) O somatório entre todos os valores;
 b) Qual foi o menor valor digitado;
 c) A média entre todos os valores;
-<<<<<<< HEAD
 d) Quantos valores são pares.
 */
 /*
@@ -277,8 +263,6 @@ da sequência de Fibonacci.
 mostre uma listagem com todos os nomes informados, na ordem inversa daquela em
 que eles foram informados.
 */
-=======
-d) Quantos valores são pares.*/
 
 /*11. Desenvolva um programa que leia o primeiro termo e a razão de uma PA (Progressão
 Aritmética), mostrando na tela os 10 primeiros elementos da PA e a soma entre todos os
@@ -294,4 +278,4 @@ da sequência de Fibonacci.*/
 /*14. Faça um programa que leia 7 nomes de pessoas e guarde-os em um vetor. No final,
 mostre uma listagem com todos os nomes informados, na ordem inversa daquela em
 que eles foram informados.*/
->>>>>>> 86d109146a0ede0c0642566aeccdbd1df0b3026c
+
