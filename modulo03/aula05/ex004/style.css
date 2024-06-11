@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+h2 {
+  color: white;
+  text-align: left;
+
+}
+header#menu {
+  background-color: blue;
+  width: 100vw;
+  padding: 20px;
+  text-align: end;
+}
+#menu-itens {
+  max-width: 1200px;
+  padding: 0 30px;
+}
+.menu-item {
+  display: inline-block;
+}
+
+.menu-item a {
+  padding: 20px;
+}
+
+#pg-home .home a,
+#pg-about .about a,
+#pg-contact .contact a{
+  background-color: rgba(0, 0, 0, 0.283);
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  background-color: rgba(0, 0, 0, 0.283);
+  
+}

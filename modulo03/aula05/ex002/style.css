@@ -29,3 +29,18 @@ h1#textoPrincipal {
 #textoPrincipal {
   color: green;
 }
+
+/*
+Se o seletor for mais específico que um outro a regra mais específica será aplicada
+*/
+
+/*
+(FORÇA DE ESPECIFICIDADE CRESCENTE)
+SELETOR UNIVERSAL
+TIPO DE SELETORES
+CLASSE SELETORAS
+ATRIBUTOS SELETORES
+PSEUDO-CLASSES
+SELETORES ID
+ESTILO INLINE
+*/

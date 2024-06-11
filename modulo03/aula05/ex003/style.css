@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: azure;
+}
+
+nav#menu-lateral {
+  background-color: blue;
+  color: white;
+  height: 100vh;
+  float: left;
+  bottom: 0;
+  left: 0;
+}
+
+#conteudo-principal {
+  max-width: 700px;
+  text-align: center;
+  height: 90vh;
+  margin: auto;
+}
+
+ul a {
+  display: block;
+  width: 100px;
+  color: inherit;
+  padding: 25px;
+}
+
+a:hover {
+  background-color: rgba(0, 0, 0, 0.247);
+}
+
+#principal #navegacao .home a,
+#contacts #navegacao .contact a,
+#abouts #navegacao .about a {
+  background-color: rgba(0, 0, 0, 0.247);
+  color: #fff;
+}
