@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inserindo JS</title>
+  <script>
+    function eventoMouse() {
+      document.write('Evento aconteceu!');
+    }
+  </script>
+</head>
+<body>
+  <div style="width: 200px; height: 200px; background-color: blue;" onclick="eventoMouse()"></div>
+  <div style="width: 200px; height: 200px; background-color: blue;" onmousedown="eventoMouse()"></div>
+  <div style="width: 200px; height: 200px; background-color: blue;" onmouseup="eventoMouse()"></div>
+  <div style="width: 200px; height: 200px; background-color: blue;" onmouseout="eventoMouse()"></div>
+</body>
+</html>
