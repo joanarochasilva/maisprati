@@ -3,15 +3,17 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
+
 }
 
 body {
   background-color: #f3edf1;
+  overflow-x: hidden;
 }
 
 nav#menu {
   background-color: #451776;
-  width: 100%;
+  width: 100vw;
   height: 50px;
   padding: 5px;
 }
@@ -23,18 +25,25 @@ ul#itens-menu{
 
 ul#itens-menu li {
 
-  display: inline-block;
-  padding: 15px;
+  display: block;
+  float: left;
+  margin: 20px 1px;
 }
 
 ul#itens-menu li>a {
   color: #e7d8e9;
+  padding: 5px;
+}
+
+ul#itens-menu li>a:hover {
+  background-color: #e7d8e940;
+  padding: 5px;
 }
 
 main#principal {
   background-color: #fff;
   border-radius: 5px;
-  width: 1000px;
+  max-width: 1000px;
   margin: 50px auto;
   padding: 60px;
 }
@@ -45,23 +54,26 @@ main#principal {
 
 #informacoes {
   margin: 50px auto;
-  width: 800px;
+  max-width: 800vw;
 }
 input, select, textarea {
   color: #695e72;
   display: inline-block;
   border-radius: 3px;
-  width: 200px;
   border: .5px solid #e6e1ef;
   padding: 10px;
   margin: 5px;
   
 }
+
+input {
+  width: 175px;
+}
 select {
   width: 175px;
 }
 textarea {
-  width: 755px;
+  width: 70%;
 
 }
 
@@ -71,4 +83,39 @@ input#lancamento {
 
 #botao-adicionar {
   float: right;
+  background-color: green;
+  color: white;
+  width: 80px;
 }
+
+#botao-adicionar:hover {
+  background-color: rgb(35, 155, 32);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: .5px .5px rgba(232, 227, 233, 0.568);
+  border: 1px dashed rgba(207, 205, 209, 0.5);
+}
+
+th{
+  border-top: 2px solid rgba(207, 205, 209, 0.5);
+  border-bottom: 2px solid rgba(207, 205, 209, 0.5);
+}
+
+
+th {
+  padding: 5px;
+}
+
+td {
+  text-align: center;
+}
+
+#botao-excluir-tabela {
+  color: #fff;
+  background-color: rgb(249, 16, 16);
+  width: 80px;
+}
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temporizador</title>
+  <style>
+    div#temporizador {
+      width: 300px;
+      height: 300px;
+      border: 1px solid black;
+      margin: auto;
+      color: blue;
+    }
+  </style>
+  <script>
+    let i = 10;
+
+    window.setInterval(() => {
+      document.getElementById('temporizador').innerHTML = `<h1>${i}</h1>`
+      i--; if(i === 0) {clearInterval(x)}
+    }, 1000)
+  </script>
+</head>
+<body>
+  <div id="temporizador">
+
+  </div>
+</body>
+</html>

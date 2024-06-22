@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Browser Object Model</title>
+
+  <script>
+    function popUp() {
+        window.open("https://www.google.com", 'nova_janela', 'width=200')
+    }
+
+    function closePopUp () {
+      window.close();
+    }
+
+    let height = window.screen.availHeight;
+    let width = window.screen.availWidth;
+
+    document. write('Altura do navegador: ' + height + '<br>');
+    document. write('Largura do navegador: ' + width + '<br>')
+
+    window.setTimeout(() => {
+      document.write('Grêmio <br>')
+    }, 1000)
+
+    let i = 10;
+    window.setInterval(() => {
+      document.write(i + '<br>');
+      i--;
+      if(i === 0) {
+        clearInterval(x)
+      }
+    }, 1000)
+  </script>
+</head>
+<body>
+  <button onclick="popUp()">Abrir Janela</button>
+  <button onclick="closePopUp()">Fechar Janela</button>
+  <button onclick="print()">Imprimir a página</button>
+
+  <button onclick="window.location.href= 'https://www.google.com'">Acessar</button>
+</body>
+</html>

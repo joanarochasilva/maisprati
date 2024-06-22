@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livros</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav id="menu">
+    <ul id="itens-menu">
+      <li><a href="cadastro.html">Cadastro</a></li>
+      <li><a href="listar.html">Listagem</a></li>
+      </>
+    </nav>
+    <main id="principal">
+      <div id="titulo">
+        <h1>Registro de Novo Livro</h1>
+      </div>
+      <div id="informacoes">
+        <input type="text" placeholder="Nome do Livro" class="informacao-texto" id="nome"/>
+        <input type="text" placeholder="Autor do Livro" class="informacao-texto" id="autor"/>
+        <select name="genero" id="genero">
+         <option value="nenhuma">Selecione um gênero</option>
+         <option value="biografia">Biografia</option>
+         <option value="autobiografia">Autobiografia</option>
+         <option value="romance">Romance</option>
+         <option value="poesia">Poesia</option>
+        </select>
+        <input type="date" name="lancamento" id="lancamento">
+        <textarea name="descricao" id="descricao" rows="1">Descrição</textarea>
+        <input type="submit" value="Adicionar" id="botao-adicionar">
+      </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
