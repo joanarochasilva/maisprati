@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="pg-cadastro">
+  <nav id="menu">
+    
+    <ul id="itens-menu">
+      <li><a href="index.html">Cadastro</a></li>
+      <li><a href="listar.html">Listagem</a></li>
+    </ul>
+  </nav>
+  
+  <main id="principal">
+    
+    <div id="titulo">
+      <h1>Registro de Novo Livro</h1>
+    </div>
+    
+    <div id="informacoes">
+      <input type="text" placeholder="Nome do Livro" class="informacao-texto" id="nome">
+      <input type="text" placeholder="Autor" class="informacao-texto" id="autor">
+
+      <select name="genero" id="genero">
+        <option value="#">Escolha uma Opção</option>
+        <option value="romance">Romance</option>
+        <option value="Poesia">Poesia</option>
+        <option value="Ficção científica">Ficção Cientifica</option>
+        <option value="Biografia">Biografia</option>
+      </select>
+
+      <input type="date" name="lancamento" id="lancamento">
+
+      <textarea name="descricao" id="descricao">Descricao</textarea>
+
+      <input type="submit" value="Adicionar" id="botao-adicionar">
+
+  </main>
+  
+  <script src="app.js"></script>
+</body>
+</html>
